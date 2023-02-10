@@ -8,7 +8,7 @@ export default function Posts() {
             post: "assets/img/gato-telefone.svg",
             likeName: "respondeai",
             imgLike: "assets/img/respondeai.svg",
-            likes: "101.523"
+            likes: 101523
         },
         {
             imgUser: "assets/img/barked.svg",
@@ -16,7 +16,15 @@ export default function Posts() {
             post: "assets/img/dog.svg",
             likeName: "adorable_animals",
             imgLike: "assets/img/adorable_animals.svg",
-            likes: "62.813"
+            likes: 62813
+        },
+        {
+            imgUser: "assets/img/barked.svg",
+            userName: "barked",
+            post: "assets/img/dog.svg",
+            likeName: "adorable_animals",
+            imgLike: "assets/img/adorable_animals.svg",
+            likes: 62813
         }
     ]
 

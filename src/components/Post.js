@@ -1,4 +1,30 @@
+import { useState } from "react";
+
 export default function Post(props) {
+    let [likeButton, setLikeButton] = useState(<ion-icon data-test="like-post" name="heart-outline" onClick={darLike}></ion-icon>);
+
+    function darLike() {
+        setLikeButton(<ion-icon data-test="like-post" name="heart-sharp" class="vermelho" onClick={removeLike}></ion-icon>);
+        setNumCurtidas(props.curtidas + 1);
+    };
+
+    function removeLike() {
+        setLikeButton(<ion-icon data-test="like-post" name="heart-outline" onClick={darLike}></ion-icon>);
+        setNumCurtidas(props.curtidas);
+    };
+
+    let [numCurtidas, setNumCurtidas] = useState(props.curtidas);
+
+
+    let [saveButton, setSaveButton] = useState(<ion-icon data-test="save-post" name="bookmark-outline" onClick={salvarPost}></ion-icon>);
+    function salvarPost() {
+        setSaveButton(<ion-icon data-test="save-post" name="bookmark-sharp" onClick={desfazSalvarPost}></ion-icon>);
+    };
+
+    function desfazSalvarPost() {
+        setSaveButton(<ion-icon data-test="save-post" name="bookmark-outline" onClick={salvarPost}></ion-icon>);
+    };
+
     return (
         <div data-test="post" class="post">
             <div class="topo">
@@ -12,25 +38,25 @@ export default function Post(props) {
             </div>
 
             <div class="conteudo">
-                <img data-test="post-image" src={props.fotoPostada} />
+                <img data-test="post-image" src={props.fotoPostada} onClick={darLike} />
             </div>
 
             <div class="fundo">
                 <div class="acoes">
                     <div>
-                        <ion-icon data-test="like-post" name="heart-outline"></ion-icon>
+                        {likeButton}
                         <ion-icon name="chatbubble-outline"></ion-icon>
                         <ion-icon name="paper-plane-outline"></ion-icon>
                     </div>
                     <div>
-                        <ion-icon data-test="save-post" name="bookmark-outline"></ion-icon>
+                        {saveButton}
                     </div>
                 </div>
 
                 <div class="curtidas">
                     <img src={props.imgCurtida} alt={props.nomeCurtida} />
                     <div data-test="likes-number" class="texto">
-                        Curtido por <strong>{props.nomeCurtida}</strong> e <strong>outras {props.curtidas} pessoas</strong>
+                        Curtido por <strong>{props.nomeCurtida}</strong> e <strong>outras {numCurtidas.toLocaleString('pt-BR')} pessoas</strong>
                     </div>
                 </div>
             </div>
