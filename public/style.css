@@ -1,3 +1,13 @@
+@keyframes animacao {
+    from {
+        font-size: 30px;
+    }
+
+    to {
+        font-size: 150px;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -187,6 +197,22 @@ body {
 
 .post .conteudo img {
     width: 100%;
+    z-index: 0;
+}
+
+.conteudo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dblike {
+    position: absolute;
+    color: #FAFAFA;
+    animation-name: animacao;
+    animation-duration: 0.3s;
+    z-index: 1;
 }
 
 .post .fundo .acoes {
@@ -317,4 +343,8 @@ ion-icon {
 
 .vermelho {
     color: red;
+}
+
+.escondido {
+    display: none;
 }

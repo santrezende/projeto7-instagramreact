@@ -8,7 +8,6 @@ export default function Sugestao(props) {
                     <div class="razao">Segue você</div>
                 </div>
             </div>
-
             <div class="seguir">Seguir</div>
         </div>
     )
