@@ -3,24 +3,24 @@ import Sugestao from "./Sugestao"
 export default function Sugestoes() {
     const sugestoesArray = [
         {
-            imgSugestao: "assets/img/bad.vibes.memes.svg",
-            userSugestao: "bad.vibes.memes"
+            imgSugestao: "assets/img/itachi.jpeg",
+            userSugestao: "uchiha_itachi"
         },
         {
-            imgSugestao: "assets/img/chibirdart.svg",
-            userSugestao: "chibirdart"
+            imgSugestao: "assets/img/nagato.jpeg",
+            userSugestao: "nagatex"
         },
         {
-            imgSugestao: "assets/img/razoesparaacreditar.svg",
-            userSugestao: "razoesparaacreditar"
+            imgSugestao: "assets/img/orochimaru.jpeg",
+            userSugestao: "orochinho"
         },
         {
-            imgSugestao: "assets/img/adorable_animals.svg",
-            userSugestao: "adorable_animals"
+            imgSugestao: "assets/img/madara.jpeg",
+            userSugestao: "uchihaGODD"
         },
         {
-            imgSugestao: "assets/img/smallcutecats.svg",
-            userSugestao: "smallcutecats"
+            imgSugestao: "assets/img/konan.jpeg",
+            userSugestao: "papergoddess"
         },
     ]
 

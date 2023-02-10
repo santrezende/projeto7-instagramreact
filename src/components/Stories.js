@@ -3,36 +3,36 @@ import Story from "./Story"
 export default function Stories() {
     const storiesArray = [
         {
-            user: "9gag",
-            img: "assets/img/9gag.svg"
+            user: "erosennin",
+            img: "assets/img/jiraya.jpeg"
         },
         {
-            user: "meowed",
-            img: "assets/img/meowed.svg"
+            user: "HyuugaShyGirl",
+            img: "assets/img/hinata.jpeg"
         },
         {
-            user: "barked",
-            img: "assets/img/barked.svg"
+            user: "hyuuganeji",
+            img: "assets/img/neji.jpeg"
         },
         {
-            user: "nathanwpylestrangeplanet",
-            img: "assets/img/nathanwpylestrangeplanet.svg"
+            user: "s2sakura",
+            img: "assets/img/sakura.jpeg"
         },
         {
-            user: "wawawicomics",
-            img: "assets/img/wawawicomics.svg"
+            user: "TIPSunade",
+            img: "assets/img/tsunade.jpeg"
         },
         {
-            user: "respondeai",
-            img: "assets/img/respondeai.svg"
+            user: "s4dsasuk3",
+            img: "assets/img/sasuke.jpeg"
         },
         {
-            user: "filomoderna",
-            img: "assets/img/filomoderna.svg"
+            user: "ROCKLEE",
+            img: "assets/img/lee.jpeg"
         },
         {
-            user: "memeriagourmet",
-            img: "assets/img/memeriagourmet.svg"
+            user: "shikamarijuana",
+            img: "assets/img/shikamaru.jpeg"
         },
     ]
 
